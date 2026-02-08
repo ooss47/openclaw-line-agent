@@ -6,7 +6,6 @@ WORKDIR /app
 
 # 安裝 OpenClaw CLI
 RUN npm install -g @openclaw/cli
-
 # 複製配置文件
 COPY config.json .
 
