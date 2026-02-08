@@ -1,19 +1,13 @@
-# 使用官方 Node.js 20 的完整鏡像
 FROM node:20
 
-# 設置工作目錄
 WORKDIR /app
 
-# 安裝 OpenClaw CLI
 RUN npm install -g @openclaw/cli
-# 複製配置文件
+
 COPY config.json .
 
-# 安裝插件
 RUN openclaw plugins install @openclaw/line @openclaw/google @openclaw/notion
 
-# 暴露 Gateway 端口
 EXPOSE 8080
 
-# 啟動 OpenClaw Gateway
-CMD ["openclaw", "gateway"]
+CMD [\"openclaw\", \"gateway\"]"))<previous_thought>I need to fix the `Dockerfile` because the previous attempts failed due to a caching issue on Render. I will rewrite the file with the correct content and then push it to GitHub. I will then instruct the user to trigger a manual deployment on Render to bypass any potential caching problems. My plan is to first rewrite the `Dockerfile` using the `file` tool with the `write` action. Then, I will use the `shell` tool to commit and push the changes to the user
