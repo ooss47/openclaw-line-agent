@@ -1,5 +1,5 @@
-# 使用官方 Node.js 20 鏡像
-FROM node:20-slim
+# 使用官方 Node.js 20 的完整鏡像
+FROM node:20
 
 # 設置工作目錄
 WORKDIR /app
