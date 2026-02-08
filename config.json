@@ -1,0 +1,24 @@
+{
+  "gateway": {
+    "host": "0.0.0.0",
+    "port": 8080
+  },
+  "channels": {
+    "line": {
+      "enabled": true,
+      "channelAccessToken": "YOUR_LINE_CHANNEL_ACCESS_TOKEN",
+      "channelSecret": "YOUR_LINE_CHANNEL_SECRET",
+      "dmPolicy": "open"
+    }
+  },
+  "tools": {
+    "google": {
+      "enabled": true,
+      "credentialsFile": "/etc/secrets/google-credentials.json"
+    },
+    "notion": {
+      "enabled": true,
+      "apiKey": "YOUR_NOTION_API_KEY"
+    }
+  }
+}
